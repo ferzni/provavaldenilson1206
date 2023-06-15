@@ -51,7 +51,7 @@ public class Commands : MonoBehaviour
             robo.AddForce(new Vector2(0, forcaPulo), ForceMode2D.Impulse);  //MOVIMENTO DO SALTO/FORÇA0
                                                                                //0;
         }
-        anim.SetInteger("Walk", (int)inputMovimento); //Atribui valor da var. ao parametro do animator
+        anim.SetInteger("walk", (int)inputMovimento); //Atribui valor da var. ao parametro do animator
         anim.SetBool("jump", sensor);
         if (Input.GetButtonDown("Fire1"))
         {
